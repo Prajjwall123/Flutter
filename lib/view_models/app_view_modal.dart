@@ -4,7 +4,7 @@ import '../models/user_modal.dart';
 
 class AppViewModal extends ChangeNotifier {
   List<Task> tasks = <Task>[];
-  User user = User("Prajwal Pokhrel");
+  User user = User("Prajwal");
 
   Color clrLvl1 = Colors.blue.shade50;
   Color clrLvl2 = Colors.blue.shade200;
