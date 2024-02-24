@@ -43,7 +43,10 @@ class _RegisterPageState extends State<RegisterPage> {
             duration: Duration(seconds: 3),
           ),
         );
-        MaterialPageRoute(builder: (context) => LoginPage());
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => LoginPage()),
+        );
         // Handle successful registration, navigate to next page, etc.
       } catch (e) {
         // Handle registration errors (e.g., display error message)

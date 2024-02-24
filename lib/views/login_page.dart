@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:my_app/views/register_page.dart';
+import 'package:my_app/views/task_list_view.dart';
+import 'package:my_app/views/task_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -30,6 +32,11 @@ class _LoginPageState extends State<LoginPage> {
           password: _passwordController.text,
         );
         // Handle successful login, navigate to next page, etc.
+        // Navigate to the TaskPage after successful login
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => TaskPage()),
+        );
       } catch (e) {
         // Show SnackBar when login fails
         ScaffoldMessenger.of(context).showSnackBar(
