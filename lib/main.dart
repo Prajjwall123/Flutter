@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/view_models/app_view_modal.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:my_app/views/login_page.dart';
 

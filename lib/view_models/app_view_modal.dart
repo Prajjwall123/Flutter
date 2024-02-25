@@ -9,7 +9,7 @@ class AppViewModal extends ChangeNotifier {
   late DatabaseReference _databaseReference;
 
   List<Task> tasks = <Task>[];
-  User user = User("unique_user_id", "Prajwal");
+  User user = User("I9XRG9voOwXE4KqHPpjN4pGjOIE2", "Prajwal");
 
   Color clrLvl1 = Colors.blue.shade50;
   Color clrLvl2 = Colors.blue.shade200;
