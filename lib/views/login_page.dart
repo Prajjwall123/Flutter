@@ -62,9 +62,15 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.asset(
+                "lib/images/login.jpg",
+                width: 320,
+              ),
               TextFormField(
+
                 controller: _emailController,
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.email), // Email icon
                   labelText: 'Email',
                   border: OutlineInputBorder(),
                 ),

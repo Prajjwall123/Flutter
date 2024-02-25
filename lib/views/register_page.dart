@@ -74,10 +74,14 @@ class _RegisterPageState extends State<RegisterPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.asset(
+                "lib/images/login.jpg",
+                height: 200,
+              ),
               TextFormField(
                 controller: _usernameController,
                 decoration: InputDecoration(
-                  labelText: 'Username', // Added label for username field
+                  labelText: 'Username',
                   border: OutlineInputBorder(),
                 ),
                 validator: (value) {
@@ -92,6 +96,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 controller: _emailController,
                 decoration: InputDecoration(
                   labelText: 'Email',
+                  prefixIcon: Icon(Icons.email), // Email icon
                   border: OutlineInputBorder(),
                 ),
                 validator: (value) {
@@ -101,6 +106,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   return null;
                 },
               ),
+
               SizedBox(height: 16.0),
               TextFormField(
                 controller: _passwordController,
@@ -166,6 +172,8 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ],
               ),
+              SizedBox(height: 16.0),
+
             ],
           ),
         ),

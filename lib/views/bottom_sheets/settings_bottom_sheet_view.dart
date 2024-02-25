@@ -34,7 +34,7 @@ class SettingsBottomSheetView extends StatelessWidget {
                   child: TextField(
                     onSubmitted: (value) {
                       if (entryController.text.isNotEmpty) {
-                        Task newTask = Task(entryController.text, false);
+                        Task newTask = Task(title: entryController.text, complete: false);
                         viewModal.updateUsername(entryController.text);
                         entryController.clear();
                       }
